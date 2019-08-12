@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<title>Temperature Forecast</title>
+	<script src="js/temp_forecast.js"></script>
+	<style>
+		#temp{
+			text-align:center;
+		}
+		#fah, #cel {
+			font-size:50px; 
+			text-align:center; 
+			width:150px; 
+			margin-bottom:10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Temperature Forecast</h1>
+	<hr>
+	<div id="temp">
+		<h3>Fahrenheit:</h3>
+		<input id="fah" type="text" placeholder="" value="0" /><br>
+		<button type="button" onclick="getTemp2()">To Celcius</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>Celcius:</h3>
+		<input id="cel" type="text"  placeholder="" value="0" /><br>
+		<button type="button" onclick="getTemp1()">To Fahrenheit</button>
+	</div>
+</body>
+</html>
