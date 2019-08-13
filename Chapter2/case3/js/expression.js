@@ -3,39 +3,18 @@ let y=3
 let z=5
 
 function myFunction1 (){
-if ((x > 5) && (x < 10) == !(x <=5) || !(x >= 10)){
-	alert("true")
-	
-}
-else {
-	alert("false")
-	
-	}
+	alert(x > 5) && (x < 10) == !(x <=5) || !(x >= 10)
 }
 
 function myFunction2 (){
-if (![(x > y) && (y < z)] == !(x > y) || !(y < z)){
-	alert("true")
-}
-else {
-	alert("false")
-	}
+	alert(![(x > y) && (y < z)] == !(x > y) || !(y < z))
+
 }
 	
 function myFunction3 (){
-if ((x == y) || (x > y) == (x == y) && (x < y)){
-	alert("true")
-}
-else {
-	alert("false")
-	}
+	alert((x == y) || (x > y) == (x == y) && (x < y))
 }	
 
 function myFunction4 (){
-if (![(z < x) || ( z < y)] == !(z < x) && !(z < y)){
-	alert("true")
-}
-else {
-	alert("false")
-	}
+	alert(![(z < x) || ( z < y)] == !(z < x) && !(z < y))
 }	
