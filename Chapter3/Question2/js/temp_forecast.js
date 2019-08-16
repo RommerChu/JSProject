@@ -8,7 +8,7 @@ let temp6 = "It's really hot! Proballbly best to stay in the air condidtioned sp
 
 function getTemp1(){
 	let c = document.getElementById("cel").value
-	let fah = (c * (9/5))+32
+	let fah = parseFloat(Math.round((c * (9/5))+32)).toFixed(1)
 	document.getElementById("fah").value=fah
 	if (c <= -18){
 		alert(temp1)
@@ -32,7 +32,7 @@ function getTemp1(){
 
 function getTemp2(){
 	let f=document.getElementById("fah").value
-	let cel=5/9*(f-32)
+	let cel = parseFloat(Math.round(5/9*(f-32))).toFixed(1)
 	document.getElementById("cel").value=cel
 	if (f <= 0) {
 		alert(temp1)
