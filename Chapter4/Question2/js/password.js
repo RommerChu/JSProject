@@ -28,16 +28,14 @@ function ShowPwd2() {
 function filter(input){
 	let regex = /^\s*(.*\S)\s*$/gi; // non-whitespaces of string
 	input.value = input.value.replace(regex, "$1")
+	return true
 }
 //Alert of passwords if its true or false
 function getPass(form) { 
 	let pw1 = document.getElementById("pass1").value
 	let pw2 = document.getElementById("pass2").value
 	if (pw1 == '') {
-		alert ("Please enter Password"); 
-	}
-	else if (pw1 >= 8){
-		alert("Password character exceeded. Please type 8 characters including spaces only")
+		alert ("Please enter a password");
 	}
 	else if (pw2 == '') {
 		alert ("Please enter confirm password"); 
