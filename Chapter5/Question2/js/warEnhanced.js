@@ -1,14 +1,21 @@
 function goToWar() {
-	let name1 = ""
-	let name2 = ""
+	let name1 = "Rommer"
+	let name2 = "Corazon"
 	let playerOne = 0
 	let playerTwo = 0
 	let oneCard = 0
 	let twoCard = 0
 	let count = 1
+	let suit = ["Hearts", "Diamonds", "Club", "Spades"]
+	let deckValue = [1,2,3,4,5,6,7,8,9,10,"Jack","Queen","King"]
 	document.write("<table width=40% align='center'><tr><td colspan='2'><h3>The Game of War</h3></td></tr>")
+	for (i=0; i<deckValue.length; i++) {
+		if (deckValue[i]%2 == 0) {
+			suit[deckValue.length]=suit[i]
+		}
+	}
 	while ((playerOne<10) && (playerTwo<10)){
-		oneCard=Math.floor(Math.random() * 13 +1)
+		oneCard=Math.floor(Math.random() * 13 + 1)
 		towCard=Math.floor(Math.random() * 13 + 1)
 		if (oneCard > twoCard) 
 			playerOne++
