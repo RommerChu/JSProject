@@ -17,7 +17,7 @@ for(let n=1; n<=userInput; n++){
 	}
 }
 
-document.write.innerHTML("<p> Even Numbers </p>" + even)
+document.write("<p> Even Numbers </p>" + even)
 console.log("Odd numbers")
 console.log("Sum of even no.:"+evenSum)
 console.log("Sum of odd no.:"+oddSum)
