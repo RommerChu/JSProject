@@ -3,6 +3,23 @@ let odd=0
 let even=0
 let oddSum=0
 let evenSum=0
+for(let i=1; n<=100; n++){
+	
+	if(n%2 == 0){
+		evenSum = evenSum + n
+		evenProd = evenProd * n
+	}
+	else {
+		oddSum = oddSum + n
+		oddProd = oddProd * n
+	}
+			
+}
+
+
+
+
+
 if (userInput%2 == 0) {
 }
 else if (userInput%3 == 0){
