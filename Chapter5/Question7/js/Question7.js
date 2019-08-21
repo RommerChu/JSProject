@@ -1,8 +1,8 @@
 let frm = document.getElementById("form");
 	frm.onsubmit=function(){
 let num = document.getElementById("number").value;
-let even = document.getElementById("even").value;
-let odd = document.getElementById("odd").value;
+let even = document.getElementById("even")
+let odd = document.getElementById("odd")
 let i = Ev_num=0; Od_num=0;
 	for (i=1; i<=num; i++){
 		if (i%2 == 0){
