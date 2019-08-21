@@ -1,66 +1,32 @@
-let frm = document.getElementById("form");
-	frm.onsubmit=function(){
-let num = document.getElementById("number").value;
-let even = document.getElementById("even")
-let odd = document.getElementById("odd")
-let i = Ev_num=0; Od_num=0;
-	for (i=1; i<=num; i++){
-		if (i%2 == 0){
-			Ev_num = Ev_num+i;
+
+let num = prompt("Enter your numbers");
+let evenNum = [], oddNum = [], digit=0;
+let evensum=0, oddsum=0; evenavg=0, oddavg=0;
+	for (let i=0; i<num; i++)
+		{
+		digit=parseInt(prompt("Enter your number:"));
+		if(digit%2==0)
+		{
+			evenNum.push(digit);
+			evensum=evensum+digit;
 		}
-		else{
-			Od_num = Od_num+i;
+		else {
+			oddNum.push(digit);
+			oddsum=oddsum+digit;
 		}
 	}
-	even.innerHTML = Ev_num;
-	odd.innerHTML = Od_num;
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*let num = [ 4, 8, 11, 15, 18, 35, 54, 85, 92 ]
-	let even = []
-	let odd = []
-	for (let i =0; i<num.length; i++){
-		if (num[i]%2==0){
-		even[even.length] = num[i]
-
+		evenavg=(evensum/evenNum.length);
+		oddavg=(oddsum/oddNum.length);
 		
-		}
-	else{
-		odd[odd.length] = num[i]
-		}
-	}
-        console.log(even)
-		console.log(odd)
+			console.log("even Num is:"+evenNum);
+			console.log("sum of even num digit is:"+evensum);
+			console.log("Avg of even num digit is:"+evenavg);
+			
+			console.log("odd num is : "+oddNum);
+			console.log("sum of odd num digit is : "+oddsum);
+			console.log("Avg of odd num is : "+oddavg);
+			
+			
+			
 		
-		
-	let evensum =0
-	let oddsum =0
-
-	for(let i = 1;  i <=1; i++){
-	
-	if(i%2==0 ){
-		evensum= evensum+i
-	
-	
-	}
-	else{
-		oddsum= oddsum+i
-	
-		}
-	}
-
-    console.log("sum of all even numbers-"+(evensum))
-	console.log("sum of all odd numbers-"+(oddsum))*/
 		
