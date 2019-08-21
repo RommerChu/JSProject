@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Music Preference Survey</title>
+	<style>
+		li {
+			list-style: none; 
+			float: left; 
+			margin-right:10px;}
+		table {width:500px;}
+		table, td, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding:10px;}
+		td {text-align:left;
+			padding-left:15px;}
+		#submit {
+			font-size:15px;
+			text-align:center;
+			margin-top:20px;
+			width: 500px;
+			height:60px;}
+	</style>
+	<script src="js/email.js">
+		
+	</script>
+	
+</head>
+<body>
+	<h1>Survey: Music Preference</h1>
+	<form action="mailto:rommer.chu@gmail.com" method="post" enctype="text/plain">
+		<h3>Please select type of music you like.</h3>
+			<table>
+				<tr colspan="2">
+					<th>Music</th>
+					<th>Rate it!</th>
+				</tr>
+				<tr>
+					<td><input type="radio" name="Music 1: " value="Jazz" />Jazz</td>
+					<td>
+					<input type="radio" id="star1" name="Rating 1" value="1" /><label for="star5" title="5 Stars">5 stars</label>
+					<input type="radio" id="star2" name="Rating 2" value="2" /><label for="star4" title="4 Stars">4 stars</label>
+					<input type="radio" id="star3" name="Rating 3" value="3" /><label for="star3" title="3 Stars">3 stars</label>
+					<input type="radio" id="star4" name="Rating 4" value="4" /><label for="star2" title="2 Stars">2 stars</label>
+					<input type="radio" id="star5" name="Rating 5" value="5" /><label for="star1" title="1 Stars">1 star</label>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="Music 2" value="Pop" />Pop</td>
+					<td>
+					<input type="radio" id="star1" name="Rating 1" value="1" /><label for="star5" title="5 Stars">5 stars</label>
+					<input type="radio" id="star2" name="Rating 2" value="2" /><label for="star4" title="4 Stars">4 stars</label>
+					<input type="radio" id="star3" name="Rating 3" value="3" /><label for="star3" title="3 Stars">3 stars</label>
+					<input type="radio" id="star4" name="Rating 4" value="4" /><label for="star2" title="2 Stars">2 stars</label>
+					<input type="radio" id="star5" name="Rating 5" value="5" /><label for="star1" title="1 Stars">1 star</label>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="Music 3" value="Blues"/>Blues</td>
+					<td>
+					<input type="radio" id="star1" name="Rating 1" value="1" /><label for="star5" title="5 Stars">5 stars</label>
+					<input type="radio" id="star2" name="Rating 2" value="2" /><label for="star4" title="4 Stars">4 stars</label>
+					<input type="radio" id="star3" name="Rating 3" value="3" /><label for="star3" title="3 Stars">3 stars</label>
+					<input type="radio" id="star4" name="Rating 4" value="4" /><label for="star2" title="2 Stars">2 stars</label>
+					<input type="radio" id="star5" name="Rating 5" value="5" /><label for="star1" title="1 Stars">1 star</label>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="Music 4" value="HipHop"/>Hip hop</td>
+					<td>
+					<input type="radio" id="star1" name="Rating 1" value="1" /><label for="star5" title="5 Stars">5 stars</label>
+					<input type="radio" id="star2" name="Rating 2" value="2" /><label for="star4" title="4 Stars">4 stars</label>
+					<input type="radio" id="star3" name="Rating 3" value="3" /><label for="star3" title="3 Stars">3 stars</label>
+					<input type="radio" id="star4" name="Rating 4" value="4" /><label for="star2" title="2 Stars">2 stars</label>
+					<input type="radio" id="star5" name="Rating 5" value="5" /><label for="star1" title="1 Stars">1 star</label>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="Music 5" value="Classic"/>Classic</td>
+					<td>
+					<input type="radio" id="star1" name="rating-Classic" value="1" /><label for="star5" title="5 Stars">5 stars</label>
+					<input type="radio" id="star2" name="rating-Classic" value="2" /><label for="star4" title="4 Stars">4 stars</label>
+					<input type="radio" id="star3" name="rating-Classic" value="3" /><label for="star3" title="3 Stars">3 stars</label>
+					<input type="radio" id="star4" name="rating-Classic" value="4" /><label for="star2" title="2 Stars">2 stars</label>
+					<input type="radio" id="star5" name="rating-Classic" value="5" /><label for="star1" title="1 Stars">1 star</label>
+					</td>
+				</tr>
+
+			</table>
+			<!--User age-->
+			<h3>Please select your age bracket:</h3>
+			<table>
+				<tr>
+					<td><input type="radio" name="Age" value="Below20">20 and below</input></td>
+					<td><input type="radio" name="Age" value="20to30">20 to 30</input></td>
+					<td><input type="radio" name="Age" value="40Up">40 and above</input></td>
+				</tr>
+			</table>
+			<!--GENDER TABLE-->
+			<h3>Please select your gender:</h3>
+			<table>
+				<tr>
+					<td><input type="radio" name="Gender" value="Male" />Male</td>
+					<td><input type="radio" name="Gender" value="Female" />Female</td>
+				</tr>
+			</table>	
+				<div><input id="submit" type="submit" value="Submit" onclick="sendEmail()"></input></div>
+		</table>
+		
+	</form>
+</body>
+</html>
