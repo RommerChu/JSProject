@@ -1,0 +1,29 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<title>Color themes</title>
+	<link rel="stylesheet" type="text/css" href="css/color.css"/>
+	<script src="js/themes.js"></script>
+	</head>
+<body>
+	<h1>Choose Your Color Themes</h1>
+	<!--DROP DOWN FOR BACKGROUND COLOR-->
+	<div class="dropdown">
+	  <button class="dropbtn">Select Background Color</button>
+		<div class="dropdown-content">
+		<a href="#" onclick="pink()" id="colorPink" value="">Pink</a>
+		<a href="#" onclick="blue()" id="colorBlue" value="">Blue</a>
+		</div>
+	</div>
+	<!--DROP DOWN FOR TEXT COLOR-->
+	<div class="dropdown">
+	  <button class="dropbtn">Select Text Color</button>
+		<div class="dropdown-content">
+		<a href="#" onclick="red()" id="colorRed" value="">Red</a>
+		<a href="#" onclick="green()" id="colorGreen" value="">Green</a>
+		</div>
+	</div>
+	<p id="TextRed"> This text is mus be color "RED" when clicked from dropdown menu</p>
+	<p id="TextGreen"> This text is mus be color "GREEN" when clicked from dropdown menu</p>
+</body>
+</html>
