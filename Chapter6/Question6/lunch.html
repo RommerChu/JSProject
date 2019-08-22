@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Lunch menu</title>
+	<script src="js/menu.js"></script>
+</head>
+<body>
+
+	<form name="order" method="post" id="luncheonMenu" action="mailto:manager@mealstogo.net?Subject=Luncheon_Order" enctype="text/plain">
+		<input type="hidden" name="meal" id="luncheon" value="luncheon menu" />
+		<h2>Select your meal</h2>
+		<div style="width:80%">
+			<div style="width:350px;">
+				<fieldset>
+					<legend>Luncheon Menu</legend>
+					<h3>Sandwhiches selection:</h3>
+						<input type="radio" name="Ham" id="Ham">Ham
+						<input type="radio" name="Chicken" id="Chicken">Chicken
+						<input type="radio" name="Tuna" id="Tuna">Tuna
+					<h3>Sides selection:</h3>
+						<input type="radio" name="Coleslaw" id="Coleslaw">Coleslaw
+						<input type="radio" name="Baked potatoes" id="Baked potatoes">Baked potatoes
+						<input type="radio" name="Baked beans" id="BakedBeans">Baked beans
+					<h3>Drinks selection:</h3>
+						<input type="radio" name="Orange" id="Orange">Orange
+						<input type="radio" name="Mango" id="Mango">Mango
+						<input type="radio" name="Tea" id="Tea">Tea
+						<br />
+						<br />
+					<!--Customer Name-->
+						<hr>
+						<h4>Please provide your information</h4>
+						<label>Your name:</label>
+						<input type="text" name="Name" id="CusName" size="25" value=""/>
+						<input type="button" onclick="CusName('luncheon')" />
+						<br/>
+						<br/>
+					<!--Phone Number input-->
+					<label>Phone:</label>
+						<input type="text" name="Cell" id="PhoneNum" size="25" value=""/>
+						<input type="button" onclick="CusPhone('phone')"><br/>
+						<p><i>We will call your cell phone when your order is ready.</i><br />
+				</fieldset>
+			</div>
+		</div>
+		<br/>
+		<input type="submit" value="Submit my order"><br/>
+	</form>
+	</div>
+</body>
+</html>
