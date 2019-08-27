@@ -34,18 +34,36 @@ function filter(input){
 function getPass(form) { 
 	let pw1 = document.getElementById("pass1").value
 	let pw2 = document.getElementById("pass2").value
-	if (pw1 == '') {
-		alert ("Please enter a password");
+	if (pw1.length !== 8 && pw2.length !== 8) {
+			alert ("Password do not match. Please enter your password EXACTLY 8 characters!") 
+	} 
+	else if (pw1.length === pw2.length) { 
+		alert ("Password confirmed!")
+	}
+	
+	
+	//////////////////////////////////////////////////////
+	
+	
+	//else { 
+	//	alert("Password confirmed!")
+	//	return true		
+	//}
+	
+	/*if (pw1 == '') {
+		alert ("Please enter a password. Exactly 8 characters only.");
 	}
 	else if (pw2 == '') {
 		alert ("Please enter confirm password"); 
 	}	  
-	else if (pw1 != pw2) { 
+	else if (pw1 !== pw2) { 
 		alert ("Password do not match") 
-		return false; 
+		
 	} 
 	else{ 
 		alert("Password confirmed!") 
-		return false; 
+		
 	}
+	
+	let pw0 =  /^(?=.*[0-8])(?=.*[!@#$%^&*])[a-zA-Z0-8!@#$%^&*]{0,8}$/*/
 } 
